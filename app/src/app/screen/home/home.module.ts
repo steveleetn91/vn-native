@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-import {HeaderComponent} from '../../cpn/header/header.component';
-import {FooterComponent} from '../../cpn/footer/footer.component';
+import { CommonCoreModule } from '../../common-core/common-core.module';
 @NgModule({
-  declarations: [HomeComponent,HeaderComponent,FooterComponent],
+  declarations: [HomeComponent],
   imports: [
     CommonModule,
+    CommonCoreModule,
     HomeRoutingModule
   ]
 })
